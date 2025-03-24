@@ -41,7 +41,6 @@
                     $searchItem = $_GET['SearchItem'];
                     $item = "%" . $_GET['Item'] . "%";
 
-                    $sql = ;
                     $rows = $pdo->query("SELECT * FROM tickets WHERE $searchItem LIKE $item")->fetch();
                     $rows;
 
